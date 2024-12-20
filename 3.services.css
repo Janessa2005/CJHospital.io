@@ -1,0 +1,286 @@
+
+
+
+:root {
+  --primary-color: #003366; /* Dark Blue */
+  --secondary-color: #005B96; /* Strong Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+  --white-color: #FFFFFF; /* White */
+  --light-gray-color: #D3D3D3; /* Light Gray */
+  --highlight-color: #FFD700; /* Gold for highlights */
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1em 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 70%; /* Adjust width for better alignment */
+}
+
+.search-form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  margin: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--secondary-color);
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+}
+
+/* Logo styles */
+header  {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.logo{
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  align-items: left;
+}
+/* Header and Navigation combined styles */
+header, footer {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main content styles */
+main {
+  padding: 2em;
+}
+
+main h1 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* List styles */
+ol {
+  margin: 1em 0;
+}
+
+ol li {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+ul {
+  margin: 0.5em 0 1em 2em;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2, footer p, footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section styles */
+footer .Contact-Us {
+  margin-bottom: 1em;
+}
+
+footer .Contact-Us p {
+  margin: 0.5em 0;
+}
+
+footer .Contact-Us a {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+footer .Contact-Us a:hover {
+  background-color: var(--primary-color);
+}
+
+/* Centered text class */
+.center {
+  text-align: center;
+}
+
+br {
+  margin-bottom: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .search-form {
+    margin-top: 10px;
+  }
+
+  .search-form input[type="text"], .search-form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-main {
+    flex-direction: column;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+
+  .search-form {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-form input[type="text"], .search-form button {
+    font-size: 14px;
+    width: 48%; /* Adjust width for responsiveness */
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form input[type="text"] {
+    margin-bottom: 10px;
+    width: 100%; /* Ensure input takes up full width on mobile */
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .search-form input[type="text"], .search-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-form button {
+    margin-top: 10px;
+  }
+
+  table {
+    font-size: 0.8em;
+  }
+}

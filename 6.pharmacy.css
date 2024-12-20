@@ -1,0 +1,383 @@
+/* Define color variables */
+:root {
+  --primary-color: #003366; /* Dark Blue */
+  --secondary-color: #005B96; /* Strong Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+  --white-color: #FFFFFF; /* White */
+  --light-gray-color: #D3D3D3; /* Light Gray */
+  --highlight-color: #FFD700; /* Gold for highlights */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Header Styles */
+header, footer {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0; /* Align with previous code */
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin: 10px 0;
+  text-align: center;
+  color: var(--background-color); /* Same as previous code */
+  font-size: 2em; /* Increased font size for better readability */
+}
+
+/* Search Form Styles */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+/* Focus Styles for Interactive Elements */
+a, button {
+  outline: none; /* Remove default browser outline */
+}
+
+a:focus, button:focus {
+  border: 2px solid var(--focus-color);
+  box-shadow: 0 0 5px var(--focus-color);
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-style: bold;
+
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 4px;
+}
+
+
+
+
+
+.logo{
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  align-items: left;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  background-color: #ffffff; /* Add background for contrast */
+  border-radius: 8px; /* Smooth edges for a professional look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1200px; /* Ensure readability on large screens */
+  margin: 20px auto; /* Center the main content */
+  line-height: 1.6; /* Improve text readability */
+}
+
+h2 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.8em; /* Slightly larger for emphasis */
+  color: var(--primary-color); /* Keep consistent branding */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #f9f9f9; /* Light background for tables */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add depth to table */
+}
+
+th, td {
+  padding: 15px; /* More padding for spacing */
+  text-align: left;
+  font-size: 1em; /* Uniform text size for clarity */
+}
+
+th {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  text-transform: uppercase; /* Professional style for headers */
+}
+
+tfoot td {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold; /* Emphasize footer section */
+}
+
+/* Footer Styles */
+
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2, footer p, footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .search-form {
+    margin-top: 10px;
+  }
+
+  .search-form input[type="text"], .search-form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-main {
+    flex-direction: column;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+
+  /* Make the grid layout more responsive */
+  .condition {
+    grid-template-columns: repeat(2, 1fr); /* Stack in 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-main h1 {
+    font-size: 1.5em;
+  }
+
+  .search-form input[type="text"], .search-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-form button {
+    margin-top: 10px;
+  }
+
+  table {
+    font-size: 0.8em;
+  }
+
+  /* Stack the grid items in one column for very small screens */
+  .condition {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Grid styling for condition options */
+.condition {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 equal-height rows */
+  gap: 20px; /* Adds space between items */
+  padding: 20px;
+}
+
+.name-of-condition {
+  text-align: center; /* Center the content */
+}
+
+.name-of-condition img {
+  width: 100%; /* Ensures images are responsive within their containers */
+  height: auto;
+  object-fit: cover;
+}
+
+/* Form Section Styling */
+.form-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Doctor grid styling */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2em;
+}
+
+.doctor-card {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+}
+
+.doctor-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.doctor-card h3 {
+  margin: 1em 0 0.5em;
+  color: var(--primary-color);
+}
+
+.doctor-card p {
+  margin: 0.5em 0;
+}
+
+
+/* CSS to handle image sizing */
+img {
+    width: 100%; /* Ensures images fill their container, making them more accessible */
+    height: auto;
+}
+
+/* CSS for centering the header text */
+.header-center {
+    text-align: center;
+}
+
+/* Accessibility-focused Styles */
+a:focus, button:focus {
+  outline: 3px solid var(--focus-color); /* Provide more visible focus styles */
+}

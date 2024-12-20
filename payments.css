@@ -1,0 +1,175 @@
+/* Root color variables */
+:root {
+    --primary-color: #4682B4; /* Steel Blue */
+    --secondary-color: #87CEFA; /* Light Sky Blue */
+    --background-color: #F0F8FF; /* Alice Blue */
+    --text-color: #000000; /* Black */
+    --border-color: #B0C4DE; /* Light Steel Blue */
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: var(--secondary-color); /* Secondary color for the header background */
+    color: #ffffff;
+    padding: 20px;
+}
+
+.header-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start; /* Aligns the content to the left */
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px; /* Adds space between the logo and the navigation */
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff; /* Ensure all text in the footer is white */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .Contact\ Us {
+    margin-bottom: 20px;
+    color: #ffffff; /* Ensure text color for this section */
+  }
+  
+  footer .Contact\ Us p,
+  footer .Contact\ Us h2,
+  footer .Contact\ Us a {
+    color: #ffffff; /* Ensure all specific elements are white */
+  }
+  
+  footer .Contact\ Us a:hover {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    color: #ffffff; /* Ensure text color for paragraphs */
+  }
+  
+  footer a {
+    color: #ffffff; /* Ensure text color for links */
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

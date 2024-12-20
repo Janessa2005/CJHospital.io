@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0">
+    <meta name="description" content="Choose your medicine">
+
+    <title>Pharmacy Page</title>
+    <link rel="stylesheet" href="6.pharmacy.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo 2.png" class="logo" alt="Cress Jane Hospital logo">
+        
+        <!-- Using CSS for centering the form -->
+        <div class="header-center">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="select" placeholder="search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <br><br>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="2.aboutus.html">About Us</a></li>
+                <li><a href="3.services.html">Services</a></li>
+                <li><a href="4.doctors.html">Doctors</a></li>
+                <li><a href="5.consulting.html">Consulting Reservation</a></li>
+                <li><a href="6.pharmacy.html">Pharmacy</a></li>
+                <li><a href="7.contactus.html">Contact Us</a></li>
+                <li><a href="8.payments.html">Payments Portal</a></li>
+            </ul>
+        </nav>
+
+        <br><br><br><br>
+        
+        <!-- Using CSS for centering the header text -->
+        <h1 class="header-center">Payments Portal
+
+        </h1>
+    </header>
+
+
+    <main>
+        <form id="payments-portal">
+            <fieldset>
+                <legend><b>Payment Information</b></legend>
+
+                <section>
+                    <h2>Current Order</h2>
+                    <table id="order-table" class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Medicine</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Items will be dynamically added here -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total Price</td>
+                                <td id="total-price">Rs.0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+
+                <ol>
+                    <li>
+                        <label for="Hospital">Select Hospital</label>
+                        <select id="Hospital" name="hospital-name" required>
+                            <option value="" disabled selected>Select Your Branch Hospital</option>
+                            <option value="City01">Colombo 7</option>
+                            <option value="City02">Peradeniya</option>
+                            <option value="City03">Galle</option>
+                            <option value="City04">Negombo</option>
+                            <option value="City05">Anuradhapura</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="Payment">Select Payment Type</label>
+                        <select id="Payment" name="payment-type" required>
+                            <option value="" disabled selected>Select Payment Type</option>
+                            <option value="Debit Card">Debit Card</option>
+                            <option value="Credit Card">Credit Card</option>
+                            <option value="Cash">Cash</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="cash">If Cash Payment: Cash Amount</label>
+                        <input type="text" id="cash" name="cash-amount" required>
+                    </li>
+
+                    <li>
+                        <label for="card">If Card Payment: Card Number</label>
+                        <input type="text" id="card" name="card-number" required>
+                    </li>
+
+                    <li>
+                        <label for="patient">Patient's Name</label>
+                        <input type="text" id="patient" name="name" required>
+                    </li>
+
+                    <li>
+                        <label for="payer">Payer's Name</label>
+                        <input type="text" id="payer" name="payer-name" required>
+                    </li>
+
+                    <li>
+                        <label for="no">NIC or Passport No</label>
+                        <input type="text" id="no" name="nic" required>
+                    </li>
+
+                    <li>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </li>
+
+                    <li>
+                        <label for="address">Residential Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </li>
+
+                    <li>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                </ol>
+                <button type="submit">Pay Now</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <h2>Connect with Us</h2>
+            <p><strong>Hotline:</strong> +94 11 7743567</p>
+            <p><strong>Email:</strong> <a href="mailto:info@cressjaneshospital.lk">info@cressjaneshospital.lk</a></p>
+            <p><strong>Address:</strong><br>
+                193/36,<br>
+                Blue Horizon,<br>
+                Katana West,<br>
+                Katana,<br>
+                Negombo,<br>
+                Sri Lanka<br>
+            </p>
+            <p><a href="https://www.google.com/maps/place/193/36+Blue+Horizon" target="_blank" title="View Cress Jane Hospital on Google Maps">View On Google Maps</a></p>
+        </section>
+        <p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-of-service.html">Terms of Service</a></p>
+        <p>&copy; 2024 Cress Jane Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="payments.js"></script>
+</body>
+
+</html>

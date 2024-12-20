@@ -1,0 +1,362 @@
+/* Define color variables */
+:root {
+  --primary-color: #003366; /* Dark Blue */
+  --secondary-color: #005B96; /* Strong Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+  --white-color: #FFFFFF; /* White */
+  --light-gray-color: #D3D3D3; /* Light Gray */
+  --highlight-color: #FFD700; /* Gold for highlights */
+  --focus-color: #FF8C00; /* Dark Orange for focus */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+h1 {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 20px;
+  margin-bottom: 10px; /* Adjusted margin to bring content closer */
+  text-align: center;
+}
+
+p {
+  color: var(--text-color);
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  align-items: left;
+}
+
+/* Search Form Styles */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+}
+
+/* Focus Styles for Interactive Elements */
+a, button {
+  outline: none; /* Remove default browser outline */
+}
+
+a:focus, button:focus {
+  border: 2px solid var(--focus-color);
+  box-shadow: 0 0 5px var(--focus-color);
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--white-color); /* Ensure text in header and footer is white */
+}
+
+header *, footer * {
+  color: var(--white-color); /* Ensure all text in header and footer is white */
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;  /* Ensures horizontal centering */
+  align-items: center;      /* Ensures vertical centering */
+  width: 100%;
+}
+
+/* Center the hospital image */
+.hospital-img {
+  display: block; /* Makes the image behave like a block-level element */
+  margin-left: auto; /* Automatically adjusts the left margin */
+  margin-right: auto; /* Automatically adjusts the right margin */
+  width: 75%; /* Adjust this width as needed */
+  height: auto; /* Maintains aspect ratio */
+  margin-bottom: 20px; /* Adds some space below the image */
+}
+
+
+/* Add media query to adjust for smaller screens */
+@media (max-width: 768px) {
+  .hospital-img {
+    width: 100%; /* Ensures the image is responsive on smaller screens */
+    height: auto;
+  }
+}
+
+/* Main Content Styles */
+main {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+main p {
+  color: var(--text-color);
+}
+
+/* Image Styles */
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Ensuring all images in the main section are the same size */
+main img {
+  width: 100%; /* Ensures all images are the same width */
+  max-width: 600px; /* Limits the maximum width of the images */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures images are block-level */
+  margin: 20px 0; /* Adds top and bottom margin, removes center alignment */
+  text-align: left; /* Aligns the images to the left */
+}
+
+.connect-compare-images img,
+.facility-img,
+.team-img {
+  width: 48%;
+  height: auto;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: inline-block; /* Ensures the images remain inline */
+  text-align: left; /* Aligns the images to the left */
+}
+
+.services-img1,
+.services-img2 {
+  width: 48%;
+  height: auto;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: inline-block; /* Ensures the images remain inline */
+  text-align: left; /* Aligns the images to the left */
+}
+
+
+
+
+
+/* Footer Styles */
+footer {
+  text-align: left;
+  padding: 20px;
+  border-top: 2px solid var(--border-color);
+  color: var(--white-color);
+}
+
+footer h2 {
+  color: var(--white-color);
+}
+
+footer a {
+  color: var(--white-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Adjust layout for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .header-main {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 150px;
+    margin-right: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 8px 15px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-form button {
+    width: 100%;
+  }
+
+  .connect-compare-images img {
+    width: 100%;
+  }
+}
+
+/* Adjust layout for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .connect-compare-images img {
+    width: 100%;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer h2 {
+    font-size: 18px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}
+
+/* Adjust layout for small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .search-form input[type="text"],
+  .search-form button {
+    font-size: 14px;
+  }
+
+  footer h2 {
+    font-size: 16px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,305 @@
+/* Define color variables */
+:root {
+  --primary-color: #003366; /* Dark Blue */
+  --secondary-color: #005B96; /* Strong Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+  --white-color: #FFFFFF; /* White */
+  --light-gray-color: #D3D3D3; /* Light Gray */
+  --highlight-color: #FFD700; /* Gold for highlights */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  color: var(--primary-color);
+}
+
+/* Header Styling */
+.header-main {
+  background-color: var(--primary-color) !important;
+  color: #ffffff; /* Ensure text color is white for other elements */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-main h1 {
+  color: #ffffff; /* Specific color for h1 in the header */
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Align logo and search/nav side by side */
+  align-items: center;
+}
+
+.Hospital.logo {
+  display: flex;
+  align-items: center;
+}
+
+.Hospital.logo img {
+  max-width: 150px; /* Increase logo size */
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: auto; /* Align search form to the right */
+}
+
+.search-form input[type="text"] {
+  padding: 10px; /* Increased padding for better UX */
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-right: 10px; /* Space between input and button */
+}
+
+.search-form button {
+  padding: 10px 20px; /* Increase button size */
+  border: none;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: var(--primary-color); /* Color change on hover */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color); /* Changed color for better visibility */
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-align: center; /* Centered text within the nav links */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+nav a:hover {
+  background-color: var(--secondary-color); /* Lighter background on hover */
+  color: var(--primary-color); /* Text color on hover */
+}
+
+.logo{
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  align-items: left;
+}
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+.reservation {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.reservation h2 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.reservation-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="tel"], input[type="address"], select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2, footer p, footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .Contact {
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-form {
+    margin-top: 20px;
+    margin-left: 0; /* Reset margin-left */
+  }
+
+  .search-form input[type="text"] {
+    margin-right: 0; /* Remove margin-right */
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center; /* Center align the items */
+  }
+
+  nav a {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .reservation {
+    padding: 10px;
+  }
+
+  .reservation-form {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-main {
+    padding: 15px 0;
+  }
+
+  .header-main h1 {
+    font-size: 24px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .search-form input[type="text"] {
+    margin-right: 0; /* Remove margin-right */
+    margin-bottom: 10px; /* Space between input and button */
+  }
+
+  .search-form button {
+    width: 100%; /* Full width button */
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav a {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+
+
+  /* CSS for centering and image alignment */
+  .header-main img {
+      width: 10%;
+      height: auto;
+      float: left;
+  }
+  .header-main h1 {
+      text-align: center;
+  }
+  .search-form {
+      display: flex;
+      justify-content: center;
+  }
+
+}

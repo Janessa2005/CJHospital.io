@@ -1,0 +1,91 @@
+/* Define color variables */
+:root {
+  --primary-color: #003366; /* Dark Blue */
+  --secondary-color: #005B96; /* Strong Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+  --white-color: #FFFFFF; /* White */
+  --light-gray-color: #D3D3D3; /* Light Gray */
+  --highlight-color: #FFD700; /* Gold for highlights */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+p {
+  color: var(--light-text-color);
+  font-size: 1rem;
+}
+
+/* Logo Styles */
+.logo{
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  align-items: left;
+}
+/* Centering Using CSS */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center images */
+}
+
+/* Navigation */
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}

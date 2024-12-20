@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You can order your medicines from here">
+    <title>Medicine Order</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+    <header>
+        <img src="logo 2.png" class="logo" alt="Cress Jane Hospital logo">
+
+        
+
+
+        <div class="centered-content">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="select" placeholder="search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+        <br>
+        <br>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="2.aboutus.html">About Us</a></li>
+                <li><a href="3.services.html">Services</a></li>
+                <li><a href="4.doctors.html">Doctors</a></li>
+                <li><a href="5.consulting.html">Consulting Reservation</a></li>
+                <li><a href="6.pharmacy.html">Pharmacy</a></li>
+                <li><a href="7.contactus.html">Contact Us</a></li>
+                <li><a href="8.payments.html">Payments Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>  
+    <button id="applyFavourites">Apply Favourites</button>
+    <div id="favouritesList"></div>
+
+    
+
+
+
+
+
+    
+
+    <!-- Medicine Categories -->
+    <div class="medicine-category">
+
+        <a href="6.pharmacy.html"><h2 id="Med01">Analgesics</h2></a>
+        <div class="flex-container">
+            <div class="medicine-item">
+                <img src="PfizerParacetamol500mg.webp" alt="Paracetamol">
+                <p>Paracetamol</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med01-quantity">Quantity</label>
+                <input type="number" id="Med01-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+               
+            </div>
+            <div class="medicine-item">
+                <img src="ibuprofen-tablets-500x500.webp" alt="Ibuprofen">
+                <p>Ibuprofen</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med02-quantity">Quantity</label>
+                <input type="number" id="Med02-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+                
+            </div>
+            <div class="medicine-item">
+                <img src="Aspirin-Tablet-300mg-GMP-Drug.avif" alt="Aspirin">
+                <p>Aspirin</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med03-quantity">Quantity</label>
+                <input type="number" id="Med03-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="neoprox.webp" alt="Naproxen">
+                <p>Naproxen</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med04-quantity">Quantity</label>
+                <input type="number" id="Med04-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+               
+            </div>
+            <div class="medicine-item">
+                <img src="eum-codeine-1_1.jpg" alt="Codeine">
+                <p>Codeine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med05-quantity">Quantity</label>
+                <input type="number" id="Med05-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="INDOMETHACIN-600x600.webp" alt="Indomethacin">
+                <p>Indomethacin</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med06-quantity">Quantity</label>
+                <input type="number" id="Med06-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="medicine-category">
+        <a href="6.pharmacy.html"><h2 id="Med02">Antibiotics</h2></a>
+        <div class="flex-container">
+            <div class="medicine-item">
+                <img src="all_0056_Amoxicillin.jpg" alt="Amoxicillin">
+                <p>Amoxicillin</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med07-quantity">Quantity</label>
+                <input type="number" id="Med07-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+
+            <div class="medicine-item">
+                <img src="Ciprofloxacin500mg.webp" alt="Ciprofloxacin">
+                <p>Ciprofloxacin</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med08-quantity">Quantity</label>
+                <input type="number" id="Med08-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="doxycycline-capsules-.jpg" alt="Doxycycline">
+                <p>Doxycycline</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med09-quantity">Quantity</label>
+                <input type="number" id="Med09-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+
+            </div>
+            <div class="medicine-item">
+                <img src="azithromycin-500-mg-tablets-500x500.webp" alt="Azithromycin">
+                <p>Azithromycin</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med10-quantity">Quantity</label>
+                <input type="number" id="Med10-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="Clindamycin-150mg-Capsules-1.webp" alt="Clindamycin">
+                <p>Clindamycin</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med11-quantity">Quantity</label>
+                <input type="number" id="Med11-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+
+            </div>
+            <div class="medicine-item">
+                <img src="cephalexin.jpg" alt="Cephalexin">
+                <p>Cephalexin</p>
+                <p>Price per unit: Rs.100.00</p>
+                <input type="number" id="Med12-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                <label for="Med12-quantity">Quantity</label>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="medicine-category">
+        <a href="6.pharmacy.html"><h2 id="Med03">Antihistamines</h2></a>
+        <div class="flex-container">
+            <div class="medicine-item">
+                <img src="Diphenhydramine-25mg-Tablets-20-Tablets.png" alt="Diphenhydramine">
+                <p>Diphenhydramine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med13-quantity">Quantity</label>
+                <input type="number" id="Med13-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="Major_Loratadine_grande.webp" alt="Loratadine">
+                <p>Loratadine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med14-quantity">Quantity</label>
+                <input type="number" id="Med14-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+
+            </div>
+            <div class="medicine-item">
+                <img src="cetrizine.jpg" alt="Cetirizine">
+                <p>Cetirizine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med15-quantity">Quantity</label>
+                <input type="number" id="Med15-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="fexofenadine.jpg" alt="Fexofenadine">
+                <p>Fexofenadine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med16-quantity">Quantity</label>
+                <input type="number" id="Med16-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+
+            <div class="medicine-item">
+                <img src="Hydroxyzine-Hcl-Tablets.webp" alt="Hydroxyzine">
+                <p>Hydroxyzine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med17-quantity">Quantity</label>
+                <input type="number" id="Med17-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="desloratadine_actavis_5mg_-_30_tablets-1.jpg" alt="Desloratadine">
+                <p>Desloratadine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med18-quantity">Quantity</label>
+                <input type="number" id="Med18-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="medicine-category">
+        <a href="6.pharmacy.html"><h2 id="Med04">Antidepressants</h2></a>
+        <div class="flex-container">
+            <div class="medicine-item">
+                <img src="paroxetine-.jpg" alt="Paroxetine">
+                <p>Paroxetine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med19-quantity">Quantity</label>
+                <input type="number" id="Med19-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+
+                
+                
+                
+            </div>
+            <div class="medicine-item">
+                <img src="trazodone-50-mg.jpg" alt="Trazodone">
+                <p>Trazodone</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med20-quantity">Quantity</label>
+                <input type="number" id="Med20-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="sertraline-25mg.jpeg" alt="Sertraline">
+                <p>Sertraline</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med21-quantity">Quantity</label>
+                <input type="number" id="Med21-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="Prodep-Capsules.webp" alt="Prodep">
+                <p>Prodep</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med22-quantity">Quantity</label>
+                <input type="number" id="Med22-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="Fluoxetine.webp" alt="Fluoxetine">
+                <p>Fluoxetine</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med23-quantity">Quantity</label>
+                <input type="number" id="Med23-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+            <div class="medicine-item">
+                <img src="escitalopram-.png" alt="Escitalopram">
+                <p>Escitalopram</p>
+                <p>Price per unit: Rs.100.00</p>
+                <label for="Med24-quantity">Quantity</label>
+                <input type="number" id="Med24-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="medicine-category">
+        <a href="6.pharmacy.html"><h2 id="Med05">Antihypertensives</h2></a>
+        <div class="flex-container">
+            <div class="medicine-item">
+                <img src="Losartan_20s_50mg__51892_zoom.jpg" alt="Losartan">
+                <p>Losartan</p>
+                <p>Price per unit: Rs.100</p>
+                <label for="Med25-quantity">Quantity</label>
+                <input type="number" id="Med25-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="Amlodipine-5mg-1.webp" alt="Amlodipine">
+                <p>Amlodipine</p>
+                <p>Price per unit: Rs.100</p>
+                <label for="Med26-quantity">Quantity</label>
+                <input type="number" id="Med26-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="hydrochlorothiazide.jpg" alt="Hydrochlorothiazide">
+                <p>Hydrochlorothiazide</p>
+                <p>Price per unit: Rs.100</p>
+                <label for="Med27-quantity">Quantity</label>
+                <input type="number" id="Med27-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="Doxazosin_.png" alt="Doxazosin">
+                <p>Doxazosin</p>
+                <p>Price per unit: Rs.100</p>
+                <label for="Med28-quantity">Quantity</label>
+                <input type="number" id="Med28-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="furosemide-box.jpg" alt="Furosemide">
+                <p>Furosemide</p>
+                <p>Price per unit: Rs.100</p>
+                <label for="Med29-quantity">Quantity</label>
+                <input type="number" id="Med29-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="Clonidine-Transdermal-System-0.2-mg.jpg" alt="Clonidine">
+                <p>Clonidine</p>
+                <p>Price per unit: Rs.100</p>
+                <label for="Med30-quantity">Quantity</label>
+                <input type="number" id="Med30-quantity" min="0" value="1">
+                <button type="submit">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    
+            
+
+
+                
+            
+    
+                        
+              
+            
+                
+
+                
+                <div class="medicine-category">
+                    <a href="6.pharmacy.html"><h2 id="Med06">Antipyretics</h2></a>
+                    <div class="flex-container">
+                        <div class="medicine-item">
+                            <img src="acetaminophen.jpg" alt="Acetaminophen">
+                            <p>Acetaminophen</p>
+                            <p>Price per unit: Rs.100</p>
+                            <label for="Med31-quantity">Quantity</label>
+                            <input type="number" id="Med31-quantity" min="0" value="1">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="Aspirin-Protect-30_s.webp" alt="Aspirin">
+                            <p>Aspirin</p>
+                            <p>Price per unit: Rs.100</p>
+                            <label for="Med32-quantity">Quantity</label>
+                            <input type="number" id="Med32-quantity" min="0" value="1">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="ibuprofen_tabs__60250.jpg" alt="Ibuprofen">
+                            <p>Ibuprofen</p>
+                            <p>Price per unit: Rs.100</p>
+                            <label for="Med33-quantity">Quantity</label>
+                            <input type="number" id="Med33-quantity" min="0" value="1">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="neoprox.webp" alt="Naproxen">
+                            <p>Naproxen</p>
+                            <p>Price per unit: Rs.100</p>
+                            <label for="Med34-quantity">Quantity</label>
+                            <input type="number" id="Med34-quantity" min="0" value="1">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="ketoprofen-lekpharm-50-10-sm.jpg" alt="Ketoprofen">
+                            <p>Ketoprofen</p>
+                            <p>Price per unit: Rs.100</p>
+                            <label for="Med35-quantity">Quantity</label>
+                            <input type="number" id="Med35-quantity" min="0" value="1">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                        <div class="medicine-item">
+                            <img src="mefenamic_acid_500mg_-_28_tablets-2-800xauto.jpg" alt="Mefenamic Acid">
+                            <p>Mefenamic Acid</p>
+                            <p>Price per unit: Rs.100</p>
+                            <label for="Med36-quantity">Quantity</label>
+                            <input type="number" id="Med36-quantity" min="0" value="1">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                      
+
+                <section>
+                    <h2>Current Order</h2>
+                    <table id="order-table">
+                        <thead>
+                            <tr>
+                                <th>Medicine</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Items will be dynamically added here -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total Price</td>
+                                <td id="total-price">Rs.0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <br>
+                    <button id="addToFavourites">Add to Favourites</button>
+                    
+                    
+                    <button id="buy-now">Buy Now</button>
+                    <button id="reset-cart">Reset</button>
+                </section>
+        
+           
+        </main>
+
+
+       
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+    
+        <footer>
+            <section class="contact-info">
+                <h2>Connect with Us</h2>
+                <p><strong>Hotline:</strong> +94 11 7743567</p>
+                <p><strong>Email:</strong> <a href="mailto:info@cressjaneshospital.lk">info@cressjaneshospital.lk</a></p>
+                <p><strong>Address:</strong><br>
+                    193/36,<br>
+                    Blue Horizon,<br>
+                    Katana West,<br>
+                    Katana,<br>
+                    Negombo,<br>
+                    Sri Lanka<br>
+                </p>
+                <p><a href="https://www.google.com/maps/place/193/36+Blue+Horizon" target="_blank" title="View Cress Jane Hospital on Google Maps">View On Google Maps</a></p>
+            </section>
+            <p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-of-service.html">Terms of Service</a></p>
+            <p>&copy; 2024 Cress Jane Hospital. All rights reserved.</p>
+        </footer>
+            <script src="order.js"></script>
+        </body>
+        </html>
+                
+            
+            

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0">
+    <meta name="description" content="Choose your medicine">
+
+    <title>Pharmacy Page</title>
+    <link rel="stylesheet" href="6.pharmacy.css">
+</head>
+
+<body>
+    <header>
+        <!-- Fixed image source and added alt text -->
+        <img src="logo-2.png" alt="Hospital Logo" width="100px" height="auto">
+        
+        <!-- Using CSS for centering the form -->
+        <div class="header-center">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="select" placeholder="search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <br><br>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="2.aboutus.html">About Us</a></li>
+                <li><a href="3.services.html">Services</a></li>
+                <li><a href="4.doctors.html">Doctors</a></li>
+                <li><a href="5.consulting.html">Consulting Reservation</a></li>
+                <li><a href="6.pharmacy.html">Pharmacy</a></li>
+                <li><a href="7.contactus.html">Contact Us</a></li>
+                <li><a href="8.payments.html">Payments Portal</a></li>
+            </ul>
+        </nav>
+
+        <br><br><br><br>
+        
+        <!-- Using CSS for centering the header text -->
+        <h1 class="header-center">Contact Us
+
+        </h1>
+    </header>
+
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us Form</h2>
+            <form id="contact-us">
+                <fieldset>
+                    <legend>Contact Information Form</legend>
+
+                    <label for="name"><b>Full Name</b></label>
+                    <input type="text" id="name" name="Full Name" aria-labelledby="name"><br><br>
+
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="email" id="email" name="E-mail" aria-labelledby="email"><br><br>
+
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="tel" id="phone" name="phone" aria-labelledby="phone"><br><br>
+
+                    <label for="message"><b>Your Message</b></label>
+                    <textarea id="message" name="message" rows="4" required aria-describedby="message-description"></textarea>
+                    <p id="message-description">Provide a brief message regarding your inquiry or concern.</p><br><br>
+
+                    <button type="submit"><b>Send Your Message</b></button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <h2>Connect with Us</h2>
+            <p><strong>Hotline:</strong> +94 11 7743567</p>
+            <p><strong>Email:</strong> <a href="mailto:info@cressjaneshospital.lk">info@cressjaneshospital.lk</a></p>
+            <p><strong>Address:</strong><br>
+                193/36,<br>
+                Blue Horizon,<br>
+                Katana West,<br>
+                Katana,<br>
+                Negombo,<br>
+                Sri Lanka<br>
+            </p>
+            <p><a href="https://www.google.com/maps/place/193/36+Blue+Horizon" target="_blank" title="View Cress Jane Hospital on Google Maps">View On Google Maps</a></p>
+        </section>
+        <p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-of-service.html">Terms of Service</a></p>
+        <p>&copy; 2024 Cress Jane Hospital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

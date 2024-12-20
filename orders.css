@@ -1,0 +1,271 @@
+/* Define color variables */
+:root {
+  --primary-color: #003366; /* Dark Blue */
+  --secondary-color: #005B96; /* Strong Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+  --white-color: #FFFFFF; /* White */
+  --light-gray-color: #D3D3D3; /* Light Gray */
+  --highlight-color: #FFD700; /* Gold for highlights */
+}
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: #ffffff;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 4px;
+}
+
+
+.logo{
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  align-items: left;
+}
+
+/* Flexbox container styling for all medicine types */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space between the items */
+  margin-bottom: 20px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+.medicine-item {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
+  width: 15%; /* Adjust width to fit 6 items horizontally */
+}
+
+.medicine-item img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.medicine-item p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.medicine-item input {
+  margin-bottom: 10px;
+}
+
+.medicine-category h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.buy-now-button {
+  background-color: #1c95fe;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buy-now-button:hover {
+  background-color: #1c95fe;
+}
+
+/* Additional styling for the page */
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+
+ 
+
+/* Container for the buttons to align them */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Optional: adds spacing between buttons */
+  margin-top: 20px; /* Optional: adds space above the buttons */
+  align-items: center;
+}
+
+/* Optional: Style for the buttons */
+
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+/* Table Container */
+#order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  font-size: 18px;
+  text-align: left;
+  border: 1px solid var(--background-color);
+}
+
+/* Table Headers */
+#order-table thead th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table Body */
+#order-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Total Price Row */
+#order-table tfoot td {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: flex-start; /* Align button to the left */
+  align-items: center; /* Centers content inside the button */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.logo {
+  width: 10%;
+  height: auto;
+}
+
+
+
+.centered-content {
+  text-align: center;
+}
+
+#order-table {
+  border: 1px solid #000;
+}
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Reservation Page</title>
+    <link rel="stylesheet" href="5.consulting.css">
+    <script src="consulting.js" defer></script>
+</head>
+<body>
+
+    <header class="header-main">
+        <!-- Header content -->
+        <img src="logo 2.png" class="logo" alt="Cress Jane Hospital logo">
+        
+        <br>
+
+        <form class="search-form" action="#" method="get">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        
+        <br><br>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="2.aboutus.html">About Us</a></li>
+                <li><a href="3.services.html">Services</a></li>
+                <li><a href="4.doctors.html">Doctors</a></li>
+                <li><a href="5.consulting.html">Consulting Reservation</a></li>
+                <li><a href="6.pharmacy.html">Pharmacy</a></li>
+                <li><a href="7.contactus.html">Contact Us</a></li>
+                <li><a href="8.payments.html">Payments Portal</a></li>
+            </ul>
+        </nav>
+
+        <br><br>
+
+        <h1>Reserve your Physician Here.</h1>
+
+    </header>
+
+    <main>
+        <section class="reservation">
+            <div class="container">
+                <h2>Consulting Reservation</h2>
+
+                <form action="#" method="post" class="reservation-form" id="reservationForm">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                        <br><br>
+
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <br><br>
+
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Non-Binary</option>
+                            <option value="prefer-not-to-say">Prefer Not to Say</option>
+                        </select>
+                        <br><br>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <br><br>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <br><br>
+
+                        <label for="address">Residential Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </fieldset>
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Consultation Details</legend>
+                        <label for="reason">Reason for Consultation</label>
+                        <select id="reason" name="reason" required>
+                            <option value="" disabled selected>Select Consultation Reason</option>
+                            <option value="emergency-care">Emergency Care</option>
+                            <option value="icu">ICU</option>
+                            <option value="general-checkup">General Checkup</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="surgery">Surgery</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="gynecology">Gynecology</option>
+                            <option value="psychiatry">Psychiatry</option>
+                            <option value="counseling-services">Counseling Services</option>
+                            <option value="maternal-fetal-medicine">Maternal-Fetal Medicine</option>
+                            <option value="obstetrics">Obstetrics</option>
+                            <option value="pediatric-surgery">Pediatric Surgery</option>
+                            <option value="cardiac-surgery">Cardiac Surgery</option>
+                            <option value="general-surgery">General Surgery</option>
+                        </select>
+                        <br><br>
+
+                        <label for="doctor">Preferred Doctor (if any)</label>
+                        <input type="text" id="doctor" name="doctor">
+                        <br><br>
+
+                        <label for="appointment-date">Preferred Appointment Date</label>
+                        <input type="date" id="appointment-date" name="appointment-date">
+                    </fieldset>
+                    <br><br>
+
+                    <button type="submit">Submit Reservation</button>
+                </form>
+
+                <div id="confirmationMessage" style="display: none;">
+                    <h2>Thank you for your reservation!</h2>
+                    <p>Your consulting reservation has been accepted. We look forward to seeing you soon.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <h2>Connect with Us</h2>
+            <p><strong>Hotline:</strong> +94 11 7743567</p>
+            <p><strong>Email:</strong> <a href="mailto:info@cressjaneshospital.lk">info@cressjaneshospital.lk</a></p>
+            <p><strong>Address:</strong><br>
+                193/36,<br>
+                Blue Horizon,<br>
+                Katana West,<br>
+                Katana,<br>
+                Negombo,<br>
+                Sri Lanka<br>
+            </p>
+            <p><a href="https://www.google.com/maps/place/193/36+Blue+Horizon" target="_blank" title="View Cress Jane Hospital on Google Maps">View On Google Maps</a></p>
+        </section>
+        <p><a href="privacy-policy.html">Privacy Policy</a><br><a href="terms-of-service.html">Terms of Service</a></p>
+        <p>&copy; 2024 Cress Jane Hospital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

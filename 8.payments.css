@@ -1,0 +1,245 @@
+:root {
+  --primary-color: #2B547E; /* Dark Sapphire Blue */
+  --secondary-color: #4A90E2; /* Soft Blue */
+  --background-color: #F8F9FA; /* Light Grayish White */
+  --text-color: #333333; /* Dark Gray for text readability */
+  --border-color: #D6DBDF; /* Muted Light Gray for subtle borders */
+  --accent-color: #FFD700; /* Gold for emphasis or highlights */
+  --error-color: #E63946; /* Vibrant Red for error messages */
+  --success-color: #4CAF50; /* Green for success messages */
+}
+
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--text-color); /* Ensure good contrast for paragraphs */
+}
+
+.logo{
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  align-items: left;
+}
+/* Form Inputs and Buttons */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: calc(100% - 22px);
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-form button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.search-form button:hover {
+  background-color: #76c2ff; /* Lighter shade for hover */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+}
+
+footer h2, footer p, footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Table Styles */
+#order-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+#order-table th, #order-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#order-table th {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: left;
+}
+
+#order-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#order-table tr:hover {
+  background-color: #ddd;
+}
+
+#total-price {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .search-form input[type="text"], 
+  .search-form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-main {
+    flex-direction: column;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form input[type="text"] {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 150px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .search-form input[type="text"], 
+  .search-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}

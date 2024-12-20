@@ -1,0 +1,42 @@
+{
+    "cart": [],
+    "favourites": [],
+    "functions": {
+        "addToCart": {
+            "description": "Adds medicines to the cart",
+            "parameters": {
+                "medicineName": "string",
+                "quantityInputId": "string",
+                "pricePerUnit": "number"
+            }
+        },
+        "updateCartTable": {
+            "description": "Updates the cart table with current cart items",
+            "parameters": {}
+        },
+        "eventListeners": {
+            "submitButtons": {
+                "description": "Handles click events for add to cart buttons",
+                "parameters": {
+                    "event": "object"
+                }
+            },
+            "buyNow": {
+                "description": "Handles click events for the buy now button",
+                "parameters": {}
+            },
+            "addToFavourites": {
+                "description": "Handles click events for add to favourites button",
+                "parameters": {}
+            },
+            "applyFavourites": {
+                "description": "Handles click events for apply favourites button",
+                "parameters": {}
+            },
+            "resetCart": {
+                "description": "Handles click events for reset cart button",
+                "parameters": {}
+            }
+        }
+    }
+}

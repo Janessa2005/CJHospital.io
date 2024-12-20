@@ -1,0 +1,232 @@
+/* Define color variables */
+:root {
+  --primary-color: #003366; /* Dark Blue */
+  --secondary-color: #005B96; /* Strong Blue */
+  --background-color: #F0F8FF; /* Alice Blue */
+  --text-color: #000000; /* Black */
+  --border-color: #B0C4DE; /* Light Steel Blue */
+  --white-color: #FFFFFF; /* White */
+  --light-gray-color: #D3D3D3; /* Light Gray */
+  --highlight-color: #FFD700; /* Gold for highlights */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px; /* Standard font size for readability */
+  line-height: 1.8; /* Adequate line height for comfortable reading */
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word; /* Ensures long words don't break layout */
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em; /* Larger for better visibility */
+  color: white;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1; /* Ensures responsiveness */
+  min-width: 200px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: var(--link-hover-color);
+}
+
+.search-form button:focus {
+  outline: 2px solid var(--secondary-color); /* Visible focus outline for accessibility */
+}
+
+/* Navigation */
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+  background-color: var(--link-hover-color);
+  border-radius: 5px;
+}
+
+nav a:focus {
+  outline: 2px solid var(--link-hover-color); /* Focus state for accessibility */
+}
+
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+  float: left;
+}
+
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 5px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: var(--background-color);
+  font-size: 16px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--table-header-color);
+  font-weight: bold;
+}
+
+tfoot td {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2, footer p, footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:focus {
+  outline: 2px solid var(--link-hover-color); /* Focus state for accessibility */
+}
+
+/* Accessibility Tweaks */
+a:focus, button:focus, input:focus {
+  outline: 2px solid var(--secondary-color); /* Visible focus outline */
+}
+
+input, button {
+  font-family: inherit; /* Ensures consistency across elements */
+}
+
+/* Accessibility improvements for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form input[type="text"], .search-form button {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100px; /* Set the width */
+    height: auto; /* Let the height adjust automatically to maintain the aspect ratio */
+  }
+}
